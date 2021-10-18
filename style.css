@@ -1,0 +1,523 @@
+@font-face {
+    font-family: 'Monoton', cursive;
+    src: url("SoundsGood/Fonts/Monoton/Monoton-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url("SoundsGood/Fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+body{
+    background-color: black;
+}
+
+/*NAVBAR*/
+nav {
+    width: 100%;
+}
+  
+.navbar {
+    background-color: #000;
+    height: 80px;
+}
+  
+.navbar-toggler {
+    border: none;
+}
+  
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2.5vh;
+    color: #F2C711;
+    background-color: #000;
+}
+  
+.nav-link:hover {
+    color: white;
+}
+
+#loading {
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+span{
+    color : white;
+}
+
+#panier{
+    width: 40px;
+    height: 40px;
+}
+
+
+/*SEARCH BAR*/
+#beauty{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  /*the container must be positioned relative:*/
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+  }
+  
+  input {
+    height : 20px;
+    border-radius: 1em;
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 15px;
+    outline : none;
+  }
+  
+  input[type=text] {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  
+  #search {
+    height : 25px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: #F2C711;
+    cursor: pointer;
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border-radius: 1em;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+ 
+  }
+  
+  .autocomplete-items div {
+    padding: 6px;
+    border-radius: 1em;
+    cursor: pointer;
+    background-color: black; 
+    color: white;
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color:#F2C711; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: black !important; 
+    color: #ffffff; 
+  }
+
+
+
+/*HOME*/
+#home{
+    height: 60vh;
+    padding-top: 20vh;
+    margin-top : 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#GrandTitre{
+  font-family: Monoton, cursive;
+  font-size: 3em;
+  color: #F2C711;
+  animation-name: disco;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes disco{
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: turquoise;}
+  100% {color: fuchsia;}
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: #F2C711;
+}
+
+.zik audio{
+    padding-left: 50px;
+    height: 30px;
+    border-radius: 3em;
+    background-color: black;
+}
+
+#player-container, #play-pause {
+    cursor: pointer;
+    text-indent: -999999px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 12px 18px;
+    z-index: 2;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:20px;
+    }
+
+.play {
+background-image: url('Images/Play.png');
+}
+
+.pause {
+background-image: url('Images/pause.png')!important;
+}
+
+
+ /*WHO*/
+ #who{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titre{
+    font-family: Monoton, cursive;
+    font-size: 2em;
+    color: #F2C711;
+}
+
+p{
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+ /*CONTAINER*/
+ .block{
+    margin-top: 100px;
+}
+
+.popover{
+    font-family: Montserrat, sans-serif;
+}
+
+/*CARD DECK*/
+.card{
+    background-color: #CE6D39;
+    border: #CE6D39 3px solid;
+}
+
+.card-title{
+    font-family: montserrat , sans-serif;
+    font-size: 12px;
+}
+
+.card-text{
+    font-family: montserrat, sans-serif;
+    font-size: 10px;
+    color: black;
+}
+
+button{
+    border-radius: 2em;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    font-family: montserrat, sans-serif;
+    outline : none;
+}
+
+button:focus{
+    outline: none;
+}
+
+ /*GUITARE*/
+#guitares{
+    padding-top: 20vh;
+}
+
+/*PAGE PANIER*/ 
+.basket{
+    margin-top: 100px;
+    background-color: #CE6D39;
+}
+
+.product-header{
+    color: black;
+    padding-top : 10px;
+    font-family: 'montserrat', sans-serif;
+}
+
+.product-title, .price, .quantity, .total, .priceItem, .inCart, .total-price,.nameItem{
+    font-size: small;
+}
+
+.products{
+    color: black;
+    font-family: 'montserrat', sans-serif;
+}
+
+.container-product{
+    border: black 2px solid;
+}
+
+#tagImage{
+    width: 75px;
+}
+
+.total-products{
+    color: black;
+    display : flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: 'montserrat', sans-serif;
+}
+
+.decrease, .increase{
+    width: 50%;
+    cursor: pointer;
+}
+
+.remove{
+    width: 45%;
+    cursor: pointer;
+}
+
+/*FOOTER*/
+  #footer-sub{
+    background-color: black;
+    border-top: 1px solid #CE6D39;
+}
+
+#footer-main{
+    background-color: black;
+}
+
+#footer-sub h5{
+    color:#CE6D39;
+    margin-top: 25px;
+}
+
+#footer-sub ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+#footer-sub hr{
+    margin: 5px;
+
+}
+
+#footer-sub ul li{
+margin-left: -38px;
+}
+
+#footer-sub a:link {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+#footer-sub a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+
+#footer-sub a:hover {
+    text-decoration: none;
+    color: #F2C711;
+}
+
+
+#footer-sub a:active {
+    text-decoration: none;
+    color:#CE6D39;
+}
+
+#sub-two{
+    margin: 0px;
+    padding: 0px;
+}
+
+#sub-two h4{
+    font-size: 20px;
+    color:#CE6D39;
+}
+
+#footer-main ul{
+    list-style: none;
+}
+
+#footer-main ul li{
+    float: right;
+    text-decoration: none;
+    padding-right: 15px;
+    margin-top: 17px;
+}
+
+#footer-main a:link {
+    color:#F2C711;
+    font-size: 12px;
+}
+
+#footer-main a:visited {
+    color:#F2C711;
+}
+
+
+#footer-main a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+#footer-main a:active {
+    color:#F2C711;
+}
+
+.glyphicon-search{
+    font-size: 20px;
+    color: #F2C711;
+}
+
+#social-menu{
+    float: right;
+   margin-right: 60px;
+}
+
+#side-padding{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 376px){
+    .decrease, .increase{
+        width: 42%;
+    }
+    .remove{
+        width: 37%;
+    }
+}
+@media screen and (min-width: 576px){
+    .basket{
+        margin-bottom: 80px;
+    }
+}
+@media screen and (min-width: 768px){
+    .decrease, .increase{
+        width: 25%;
+    }
+    .remove{
+        width: 12%;
+    }
+    #tagImage{
+        width: 120px;
+    }
+    .priceItem, .inCart, .total-price{
+        font-size: medium;
+    }
+    #sub-two .vertical-line{
+        color:#CE6D39;
+        border-right: 1px solid #CE6D39;
+        margin: 8px;
+        padding: 0px;
+    }
+}
+@media screen and (min-width: 993px){
+    .decrease, .increase{
+            width: 15%;
+    }
+    .remove{
+        width: 10%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .product-title, .price, .quantity, .total, .nameItem{
+        font-size: medium;
+    }
+    #tagImage{
+        width: 150px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .remove{
+        width: 8%;
+    }
+}
+
+/*MODALE*/
+/*
+.modale{
+    display: none; /* par défaut 
+    position: fixed; 
+    z-index: 9999; positionne la modale au-dessus du reste 
+    padding-top: 100px; emplacement de la modale 
+    left: 0; 
+    top: 0; 
+    width: 100%;  
+    height: 100%; 
+    overflow: auto; permet le scroll si besoin 
+    background-color: rgb(0,0,0); /* couleur du fond de page 
+    background-color: rgba(0,0,0,0.4); /* black avec transparence 
+  } 
+  /*Contenu modale*/
+  /* 
+ .contenu-modale{
+    background-color: #F2C711;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #CE6D39;
+    width: 80%;
+}
+*/
+/*Croix qui ferme la modale*/
+/* 
+.fermeture-modale{
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.fermeture-modale:hover, .fermeture-modale:focus{
+    color: #CE6D39;
+    text-decoration: none;
+    cursor: pointer;
+}
+.fontCart{
+    color: black;
+    font-family: montserrat, sans-serif;
+} 
+*/
+/* FIN MODALE */
